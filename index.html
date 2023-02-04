@@ -1,0 +1,108 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            html, body {
+                font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"; 
+                margin: 0px;
+                padding: 0px;
+                background: #000;
+                color: #FFF;
+            }
+            html * {
+                box-sizing: border-box;
+            }
+
+            #main {
+                margin: 0 auto;
+                width: 80%;
+                background: #222;
+                padding: 16px;
+            }
+
+            #main > h1 {
+                margin: 0px;
+            }
+
+            #coffee-grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+            #coffee-grid > * {
+                padding: 4px;
+                border-bottom: 1px solid #333;
+            }
+            #coffee-grid .grid-header {
+                font-weight: bold;
+                text-transform: uppercase;
+                margin-bottom: 8px;
+            }
+            #coffee-grid .grid-item img {
+            }
+        </style>
+    </head>
+    <body>
+        <div id="main">
+            <h1>Coffee is fucking awesome 🥰️</h1>
+            <h4>Whoever disagrees has never tasted it's full glory..</h4>
+            <p>I have put this to the test myself and considered the following the truth. Testresults can be seen below.</p>
+
+            <div id="coffee-grid">
+                <div class="grid-header">Etablishment</div>
+                <div class="grid-header">Score stfnz</div>
+                <div class="grid-header">Score $companion</div>
+            </div>
+        </div>
+        <script>
+            let scores = [
+                ['Puck(NIJMEGEN)', 5, 5],
+                ['Puck(ARNHEM)', 5, 0],
+                ['Hotel Credible(NIJMEGEN)', 3, 0],
+                ['Bairro Alto(NIJMEGEN)', 3, 0],
+                ['Downtown (NIJMEGEN)', 3, 0],
+                ['blooming coffee roastery & coffee-bar(COLOGNE)', 4, 4]
+            ];
+
+            let grid = document.querySelector('#coffee-grid');
+            for (let score of scores) {
+                let elements = buildScoreRow(score);
+                for (let element of elements) {
+                    grid.appendChild(element);
+                }
+            }
+
+            function buildScoreRow(score) {
+                let placeElement = document.createElement('div');
+                placeElement.classList.add('grid-item');
+                placeElement.textContent = score[0];
+                let stfnzElement = buildScore(score[1]);
+                let companionElement = buildScore(score[2]);
+                console.log(stfnzElement, companionElement);
+
+                return [placeElement, stfnzElement, companionElement];
+            }
+
+            function buildScore(score) {
+                let gridItem = document.createElement('div');
+                gridItem.classList.add('grid-item');
+                let enabledcoffee = document.createElement('img');
+                enabledcoffee.classList.add('enabled');
+                enabledcoffee.src = 'coffee-64.png';
+                let disabledcoffee = document.createElement('img');
+                disabledcoffee.classList.add('disabled');
+                disabledcoffee.src = 'coffee-64-disabled.png';
+                console.log(gridItem);
+                for (let i = 0; i < 5; i++) {
+                    if (score > i) {
+                        gridItem.appendChild(enabledcoffee.cloneNode());
+                    } else {
+                        gridItem.appendChild(disabledcoffee.cloneNode());
+                    }
+                }
+
+                return gridItem;
+            }
+        </script>
+    </body>
+</html>
