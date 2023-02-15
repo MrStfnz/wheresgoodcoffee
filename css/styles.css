@@ -1,0 +1,144 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #fc86b9;
+  --secondary-color: #e3e3e3;
+  --background-color: #121212;
+}
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--primary-color);
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  background: #000;
+}
+
+main {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 900px;
+  background: var(--background-color);
+  padding: 18px;
+}
+
+h1,
+h2 {
+  font-family: "Poppins", sans-serif;
+  line-height: 60px;
+}
+h1 {
+  /*color: #feae4d;*/
+  color: var(--primary-color);
+}
+h2 {
+  color: var(--secondary-color);
+  font-size: 18px;
+}
+p {
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  margin-bottom: 42px;
+}
+
+.grid-item {
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+}
+
+main > h1 {
+  font-size: 26px;
+  margin: 0px;
+}
+
+#coffee-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+#coffee-grid > * {
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  margin: 8px 0 8px 0;
+  border-bottom: 1px solid #333;
+}
+#coffee-grid .grid-header {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  padding: 4px;
+  background-color: #1e1e1e;
+  color: var(--primary-color);
+  font-family: "Poppins", sans-serif;
+}
+#coffee-grid .grid-item img {
+  width: 24px;
+  margin: 0 2px 0 2px;
+  height: auto;
+}
+
+.mapBox {
+  width: 50vw;
+  min-height: 100%;
+}
+iframe {
+  display: block;
+  margin: 0 auto;
+  min-width: 100%;
+  padding: 0px;
+  min-height: 100vh;
+  height: 100%;
+}
+
+@media screen and (max-width: 810px) {
+  h1 {
+    font-size: 4vw;
+  }
+  h2 {
+    font-size: 16px;
+  }
+  p {
+    font-size: 2.2vw;
+  }
+
+  body {
+    flex-direction: column;
+  }
+
+  .mapBox {
+    min-width: 100vw;
+  }
+}
