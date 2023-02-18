@@ -6,6 +6,13 @@ let scores = [
     5,
     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2464.9748590714853!2d5.8591428157823335!3d51.84315487969163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c709433d74d021%3A0x5e881f78d23d6d73!2sPUCK%20specialty%20coffee!5e0!3m2!1snl!2sde!4v1675537983954!5m2!1snl!2sde",
   ],
+    [
+    "Billy's Coffee(NIJMEGEN)",
+    4,
+    4,
+    5,
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1743.068258798809!2d5.872343728012807!3d51.841403218916064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c7092d773f406b%3A0x6aec7d77bc1eceb!2sBilly&#39;s%20Coffee!5e0!3m2!1snl!2sde!4v1676748602461!5m2!1snl!2sde",
+  ],
   [
     "Hotel Credible(NIJMEGEN)",
     3,
