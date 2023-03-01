@@ -6,7 +6,7 @@ let scores = [
     5,
     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2464.9748590714853!2d5.8591428157823335!3d51.84315487969163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c709433d74d021%3A0x5e881f78d23d6d73!2sPUCK%20specialty%20coffee!5e0!3m2!1snl!2sde!4v1675537983954!5m2!1snl!2sde",
   ],
-    [
+  [
     "Billy's Coffee(NIJMEGEN)",
     4,
     4,
@@ -42,20 +42,6 @@ let scores = [
     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2457.408117325066!2d5.909188551797648!3d51.98121468366928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c7a5b5324af635%3A0x843d2484810fdffa!2sNieuwstad%202%2C%206811%20BL%20Arnhem%2C%20Nederland!5e0!3m2!1snl!2sde!4v1675538825550!5m2!1snl!2sde",
   ],
   [
-    "Café Solo(KLEVE)",
-    1,
-    2,
-    4,
-    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d616.9742347647103!2d6.138567938818967!3d51.78976978764245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c776a79d0009e7%3A0xb4e15368738c7181!2sCafe%20Solo%20Kleve!5e0!3m2!1snl!2sde!4v1675539510662!5m2!1snl!2sde",
-  ],
-  [
-    "Die Koffie Kompanie GmbH(KLEVE)",
-    3,
-    3,
-    5,
-    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d308.4885734170506!2d6.138601333495992!3d51.78955690050456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c777c9c4dc2a27%3A0x773e795f655daf93!2sDie%20Koffie%20Kompanie%20GmbH!5e0!3m2!1snl!2sde!4v1675539562232!5m2!1snl!2sde",
-  ],
-  [
     "Sprout Coffee Roasters(EINDHOVEN)",
     4,
     5,
@@ -68,6 +54,27 @@ let scores = [
     5,
     5,
     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2435.5754673848687!2d4.881125516330951!3d52.378117454485924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c609cffe505ed1%3A0x97d808325cd9468a!2sDrupa%20Coffee%20Roasters!5e0!3m2!1snl!2sde!4v1675539778696!5m2!1snl!2sde",
+  ],
+  [
+    "Filtro // Speciality Coffee(DEN HAAG)",
+    2,
+    2,
+    5,
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2452.0309924028566!2d4.305953315791077!3d52.079165679733116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5b72566a858a5%3A0x3664050bfa1f30d5!2sFiltro%20%2F%2F%20Speciality%20Coffee%20and%20Lunch%20Bar!5e0!3m2!1snl!2snl!4v1677675800840!5m2!1snl!2snl",
+  ],
+  [
+    "Café Solo(KLEVE)",
+    1,
+    2,
+    4,
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d616.9742347647103!2d6.138567938818967!3d51.78976978764245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c776a79d0009e7%3A0xb4e15368738c7181!2sCafe%20Solo%20Kleve!5e0!3m2!1snl!2sde!4v1675539510662!5m2!1snl!2sde",
+  ],
+  [
+    "Die Koffie Kompanie GmbH(KLEVE)",
+    3,
+    3,
+    5,
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d308.4885734170506!2d6.138601333495992!3d51.78955690050456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c777c9c4dc2a27%3A0x773e795f655daf93!2sDie%20Koffie%20Kompanie%20GmbH!5e0!3m2!1snl!2sde!4v1675539562232!5m2!1snl!2sde",
   ],
   [
     "Manufact Coffee Roasters(HAMBURG)",
